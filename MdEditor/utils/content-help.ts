@@ -155,6 +155,7 @@ export const directive2flag = (
         break;
       }
       case 'underline': {
+        console.log(params);
         if (params.discord) {
           targetValue = `__${selectedText}__`;
           deviationStart = 2;

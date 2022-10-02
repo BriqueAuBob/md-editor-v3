@@ -660,6 +660,7 @@ export const useAutoGenrator = (props: ContentProps, textAreaRef: Ref) => {
       bus.on(editorId, {
         name: 'replace',
         callback(direct: ToolDirective, params = {}) {
+          console.log(props);
           props.onChange(
             directive2flag(
               direct,
