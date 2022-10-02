@@ -35,6 +35,7 @@ declare const _default: {
             codeTheme: string;
             footers: import("./type").Footers[];
             scrollAuto: boolean;
+            isDiscord: boolean;
         }> & Omit<Readonly<import("vue").ExtractPropTypes<{
             modelValue: {
                 type: import("vue").PropType<string>;
@@ -167,7 +168,11 @@ declare const _default: {
             noIconfont: {
                 type: import("vue").PropType<boolean>;
             };
-        }>> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "preview" | "htmlPreview" | "modelValue" | "theme" | "class" | "historyLength" | "pageFullScreen" | "previewOnly" | "language" | "toolbars" | "toolbarsExclude" | "noPrettier" | "editorId" | "tabWidth" | "showCodeRowNumber" | "previewTheme" | "style" | "markedHeadingId" | "tableShape" | "noMermaid" | "sanitize" | "placeholder" | "noKatex" | "codeTheme" | "footers" | "scrollAuto">;
+            isDiscord: {
+                type: import("vue").PropType<boolean>;
+                default: boolean;
+            };
+        }>> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "preview" | "htmlPreview" | "modelValue" | "theme" | "class" | "historyLength" | "pageFullScreen" | "previewOnly" | "language" | "toolbars" | "toolbarsExclude" | "noPrettier" | "editorId" | "tabWidth" | "showCodeRowNumber" | "previewTheme" | "style" | "markedHeadingId" | "tableShape" | "noMermaid" | "sanitize" | "placeholder" | "noKatex" | "codeTheme" | "footers" | "scrollAuto" | "isDiscord">;
         $attrs: {
             [x: string]: unknown;
         };
@@ -313,6 +318,10 @@ declare const _default: {
             noIconfont: {
                 type: import("vue").PropType<boolean>;
             };
+            isDiscord: {
+                type: import("vue").PropType<boolean>;
+                default: boolean;
+            };
         }>>, () => JSX.Element, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, import("vue").EmitsOptions, string, {
             preview: boolean;
             htmlPreview: boolean;
@@ -340,6 +349,7 @@ declare const _default: {
             codeTheme: string;
             footers: import("./type").Footers[];
             scrollAuto: boolean;
+            isDiscord: boolean;
         }> & {
             beforeCreate?: ((() => void) | (() => void)[]) | undefined;
             created?: ((() => void) | (() => void)[]) | undefined;
@@ -492,6 +502,10 @@ declare const _default: {
         noIconfont: {
             type: import("vue").PropType<boolean>;
         };
+        isDiscord: {
+            type: import("vue").PropType<boolean>;
+            default: boolean;
+        };
     }>> & import("vue").ShallowUnwrapRef<() => JSX.Element> & {} & {} & import("vue").ComponentCustomProperties;
     __isFragment?: undefined;
     __isTeleport?: undefined;
@@ -628,6 +642,10 @@ declare const _default: {
     noIconfont: {
         type: import("vue").PropType<boolean>;
     };
+    isDiscord: {
+        type: import("vue").PropType<boolean>;
+        default: boolean;
+    };
 }>>, () => JSX.Element, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, import("vue").EmitsOptions, "onChange" | "onSave" | "onUploadImg" | "onHtmlChanged" | "onGetCatalog" | "onError" | "update:modelValue", {
     preview: boolean;
     htmlPreview: boolean;
@@ -655,6 +673,7 @@ declare const _default: {
     codeTheme: string;
     footers: import("./type").Footers[];
     scrollAuto: boolean;
+    isDiscord: boolean;
 }> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & {
     readonly NormalToolbar: typeof NormalToolbar;
     readonly DropdownToolbar: typeof DropdownToolbar;

@@ -131,6 +131,10 @@ declare const Editor: import("vue").DefineComponent<{
     noIconfont: {
         type: import("vue").PropType<boolean>;
     };
+    isDiscord: {
+        type: import("vue").PropType<boolean>;
+        default: boolean;
+    };
 }, () => JSX.Element, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, import("vue").EmitsOptions, "onChange" | "onSave" | "onUploadImg" | "onHtmlChanged" | "onGetCatalog" | "onError" | "update:modelValue", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     modelValue: {
         type: import("vue").PropType<string>;
@@ -263,6 +267,10 @@ declare const Editor: import("vue").DefineComponent<{
     noIconfont: {
         type: import("vue").PropType<boolean>;
     };
+    isDiscord: {
+        type: import("vue").PropType<boolean>;
+        default: boolean;
+    };
 }>>, {
     preview: boolean;
     htmlPreview: boolean;
@@ -290,5 +298,6 @@ declare const Editor: import("vue").DefineComponent<{
     codeTheme: string;
     footers: import("./type").Footers[];
     scrollAuto: boolean;
+    isDiscord: boolean;
 }>;
 export default Editor;

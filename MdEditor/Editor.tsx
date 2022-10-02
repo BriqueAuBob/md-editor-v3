@@ -116,6 +116,7 @@ const Editor = defineComponent({
             placeholder={props.placeholder}
             noKatex={props.noKatex}
             scrollAuto={state.scrollAuto}
+            isDiscord={props.isDiscord}
           />
           {!props.previewOnly && props.footers?.length > 0 && (
             <Footer

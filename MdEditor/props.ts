@@ -158,6 +158,10 @@ export const editorProps = () => ({
   },
   noIconfont: {
     type: Boolean as PropType<boolean>
+  },
+  isDiscord: {
+    type: Boolean as PropType<boolean>,
+    default: false
   }
 });
 
