@@ -667,6 +667,7 @@ export const useAutoGenrator = (props: ContentProps, textAreaRef: Ref) => {
               textAreaRef.value as HTMLTextAreaElement,
               {
                 ...params,
+                discord: props.isDiscord,
                 tabWidth,
                 editorId
               }

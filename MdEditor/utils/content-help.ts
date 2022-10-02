@@ -155,9 +155,15 @@ export const directive2flag = (
         break;
       }
       case 'underline': {
-        targetValue = `<u>${selectedText}</u>`;
-        deviationStart = 3;
-        deviationEnd = -4;
+        if (params.discord) {
+          targetValue = `__${selectedText}__`;
+          deviationStart = 2;
+          deviationEnd = -2;
+        } else {
+          targetValue = `<u>${selectedText}</u>`;
+          deviationStart = 3;
+          deviationEnd = -4;
+        }
         break;
       }
       case 'italic': {
@@ -168,8 +174,8 @@ export const directive2flag = (
       }
       case 'strikeThrough': {
         targetValue = `~~${selectedText}~~`;
-        deviationStart = 1;
-        deviationEnd = -1;
+        deviationStart = 2;
+        deviationEnd = -2;
         break;
       }
       case 'sub': {

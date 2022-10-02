@@ -46,6 +46,10 @@ export const contentProps = () => ({
   },
   scrollAuto: {
     type: Boolean as PropType<boolean>
+  },
+  isDiscord: {
+    type: Boolean as PropType<boolean>,
+    default: false
   }
 });
 

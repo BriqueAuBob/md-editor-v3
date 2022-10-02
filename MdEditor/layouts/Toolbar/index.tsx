@@ -402,22 +402,6 @@ export default defineComponent({
                     >
                       {ult.value.imgTitleItem?.link}
                     </li>
-                    <li
-                      class={`${prefix}-menu-item`}
-                      onClick={() => {
-                        (uploadRef.value as HTMLInputElement).click();
-                      }}
-                    >
-                      {ult.value.imgTitleItem?.upload}
-                    </li>
-                    <li
-                      class={`${prefix}-menu-item`}
-                      onClick={() => {
-                        modalData.clipVisible = true;
-                      }}
-                    >
-                      {ult.value.imgTitleItem?.clip2upload}
-                    </li>
                   </ul>
                 }
               >
