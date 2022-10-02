@@ -5,4 +5,4 @@ dist
 .idea
 *.log*
 package-lock.json
-lib
+# lib
